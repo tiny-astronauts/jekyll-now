@@ -2,17 +2,13 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<div class='main__content'>
+  <h1 class='main__title'>
+    Welcome Explorer!
+  </h1>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+  <p class='main__subtitle'>
+    We're curious builders making things in JavaScript. Want to learn more? Shoot
+    us an email at <a class='main__link' href='mailto:hello@tiny-astronauts.com'>hello@tiny-astronauts.com</a>.
+  </p>
 </div>
